@@ -339,7 +339,7 @@ $(call MOD_CONFIG,gdb) : gdb-$(CS_BASE)
 cross-gdb: $(call MOD_CONFIG,gdb)
 	cd $(BUILD_PATH)/gdb ; \
 	touch makeinfo && chmod +x makeinfo && export PATH=$$(pwd):$$PATH && \
-	$(MAKE) -j$(PROCS) CFLAGS="-Wno-error=return-type" && \
+	$(MAKE) -j$(PROCS) CFLAGS="-Wno-error=return-type -g" && \
 	$(MAKE) installdirs install-host install-target
 
 .PHONY : clean
