@@ -43,13 +43,13 @@ FULL_MULTILIBS  ?= false
 ####    PRIMARY TOOLCHAIN VERSIONS    #####
 
 CS_MAJ			?= 2013
-CS_MIN			?= 05
+CS_MIN			?= 11
 CS_BASE			?= $(CS_MAJ).$(CS_MIN)
-CS_REV 			?= 23
-GCC_VERSION 	?= 4.7
-MPC_VERSION 	?= 2013.05
-SOURCE_PACKAGE	?= 11441
-BIN_PACKAGE		?= 11442
+CS_REV 			?= 24
+GCC_VERSION 	?= 4.8
+MPC_VERSION 	?= 2013.11
+SOURCE_PACKAGE	?= 12189
+BIN_PACKAGE		?= 12190
 
 ####  PRIMARY TOOLCHAIN URLS / FILES  #####
 
@@ -61,8 +61,8 @@ LOCAL_BIN 	= $(LOCAL_BASE)-i686-pc-linux-gnu.tar.bz2
 SOURCE_URL 	= https://sourcery.mentor.com/GNUToolchain/package$(SOURCE_PACKAGE)/public/arm-none-eabi/$(LOCAL_SOURCE)
 BIN_URL 	= https://sourcery.mentor.com/GNUToolchain/package$(BIN_PACKAGE)/public/arm-none-eabi/$(LOCAL_BIN)
 
-SOURCE_MD5_CHCKSUM ?= 4c791ddbb3d4bcfee29a26eb4db5a244
-BIN_MD5_CHECKSUM ?= 9d206de1c74f9454e468ddcdd72c9c53
+SOURCE_MD5_CHCKSUM ?= 3d89a0fb72e1e3cbb3fed500dbeeec8f
+BIN_MD5_CHECKSUM ?= 8ba2bddb0a28f5606db3b6f1b9ffe6af
 
 ####    BUILD LABELING / TAGGING      #####
 BUILD_ID   ?= $(shell git describe --always)
