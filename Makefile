@@ -22,7 +22,7 @@
 
 #### HIGH LEVEL/SYSTEM CONFIG OPTIONS #####
 
-SHELL   = /bin/bash
+SHELL   = /usr/bin/env bash
 UNAME  := $(shell uname)
 TARGET  = arm-none-eabi
 PREFIX ?= $(HOME)/arm-cs-tools

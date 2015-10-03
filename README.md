@@ -19,6 +19,8 @@ build, whether it is a previous version of this same toolchain or a
 binary toolchain from another provider.  This may end up influencing
 how newlib, in particular, gets compiled.
 
+`make` must be GNU make; on FreeBSD use `gmake` instead throughout.
+
 
 Requirements (OS X)
 -------------------
